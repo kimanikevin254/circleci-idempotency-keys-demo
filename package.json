@@ -1,0 +1,45 @@
+{
+   "name": "idempotency-keys-demp",
+   "version": "0.0.1",
+   "description": "Demo application for building safer APIs with idempotency keys",
+   "type": "commonjs",
+   "devDependencies": {
+      "@types/express": "^5.0.3",
+      "@types/jest": "^30.0.0",
+      "@types/node": "^22.13.10",
+      "@types/supertest": "^6.0.3",
+      "jest": "^30.0.5",
+      "supertest": "^7.1.4",
+      "ts-jest": "^29.4.0",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.8.2"
+   },
+   "dependencies": {
+      "body-parser": "^1.20.3",
+      "express": "^4.21.2",
+      "reflect-metadata": "^0.2.2",
+      "sqlite3": "^5.1.7",
+      "typeorm": "0.3.25",
+      "uuid": "^11.1.0"
+   },
+   "scripts": {
+      "dev": "ts-node src/index.ts",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:coverage": "jest --coverage"
+   },
+   "jest": {
+      "preset": "ts-jest",
+      "testEnvironment": "node",
+      "roots": [
+         "<rootDir>/src"
+      ],
+      "testMatch": [
+         "**/__tests__/**/*.test.ts"
+      ],
+      "collectCoverageFrom": [
+         "src/**/*.{ts,js}",
+         "!src/index.ts"
+      ]
+   }
+}
