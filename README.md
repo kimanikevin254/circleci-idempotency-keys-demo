@@ -159,9 +159,6 @@ curl -X POST http://localhost:3000/api/v1/orders \
 The project includes CircleCI configuration for:
 
 -   Automated testing on every push
--   TypeScript compilation checks
--   Test coverage reporting
--   Artifact storage for coverage reports
 
 ## Technologies Used
 
